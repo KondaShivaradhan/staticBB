@@ -1,0 +1,5 @@
+build/
+dist/
+node_modules/
+flames.mp4
+package-lock.json
