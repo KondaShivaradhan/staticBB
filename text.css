@@ -15,8 +15,9 @@
   #textbox {
       margin: auto;
       width: 100vw;
-      color: white;
-      filter: url(#threshold) blur(0.2px);
+      font-weight: bolder;
+      color: rgb(26, 26, 26);
+      filter: url(#threshold) blur(0.4px);
   }
 
   #text1,

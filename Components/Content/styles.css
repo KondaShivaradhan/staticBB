@@ -1,0 +1,51 @@
+.growable {
+    transition: flex-grow 0.3s ease-in-out;
+    display: flex;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    padding: 10px;
+    width: 400px;
+    backdrop-filter: blur(2px);
+    transition: all 0.5s ease-in-out;
+}
+
+#content {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.growable:hover {
+    width: 600px;
+}
+
+.growable:hover>#content {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+/* Apply hover effect only on mobile devices */
+@media (max-width: 768px) {
+    .growable:hover+#content {
+        display: block;
+    }
+}
+
+/* Apply hover effect when .show-hover class is present */
+.show-hover .item-overlay {
+    opacity: 1;
+}
+
+.show-hover #content {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

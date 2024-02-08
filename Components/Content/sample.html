@@ -1,0 +1,1289 @@
+<div>
+  <link rel="stylesheet" href="/Components/Content/temp.css" />
+
+  <div class="global">
+    <div class="w-embed">
+      <style>
+        :root {
+          --app-height: 100%;
+          --white: #ffffff;
+          --black: #000000;
+        }
+
+        ::-webkit-scrollbar {
+          width: 0px;
+          display: none !important;
+        }
+
+        ::selection {
+          background: var(--black);
+          color: var(--white);
+        }
+
+        img::selection {
+          background: none;
+        }
+
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-size: 0.625vw;
+        }
+
+        @media screen and (max-width: 1440px) {
+          .p-med.is--clamp {
+            font-size: 0.75rem;
+          }
+        }
+
+        @media screen and (min-width: 1441px) {
+          .p-med.is--clamp {
+            font-size: 1rem;
+          }
+        }
+
+        @media screen and (min-width: 1921px) {
+          .p-med.is--clamp {
+            font-size: 1.125rem;
+          }
+        }
+
+        @media screen and (min-width: 2560px) {
+          body {
+            font-size: 1rem;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .p-large {
+            font-size: 1rem;
+          }
+        }
+
+        @media screen and (max-width: 1360px) {
+          p-med {
+            font-size: 1.3125rem;
+          }
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .pointer-off {
+          pointer-events: none;
+        }
+
+        .nav-w.is--scrolled .nav-bg {
+          height: 100%;
+        }
+
+        .nav-w.text-black .nav-bg {
+          background: var(--white);
+        }
+
+        .popular-video__wrapper video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          transform: translate(-50%, -50%);
+        }
+
+        .contact-footer {
+          height: var(--app-height);
+          pointer-events: none;
+        }
+
+        .contact-footer__inner {
+          pointer-events: auto;
+        }
+
+        @media screen and (min-width: 992px) {
+          html:not(.wf-design-mode) .project-item__info-w > * {
+            opacity: 0;
+          }
+        }
+
+        .nav-w.text-black .nav-link__line {
+          background: var(--black);
+        }
+
+        [data-popular-detail] {
+          opacity: 0;
+        }
+
+        .popular-detail__item:first-child [data-popular-detail] {
+          opacity: 1;
+        }
+
+        .client-grid,
+        .client-list__wrapper {
+          height: calc(100vh - 1.25rem);
+        }
+
+        .policy-link.w--current .filter-item__line {
+          width: 100% !important;
+          transform: translate3d(0px, 0px, 0px) !important;
+        }
+
+        .policy-link.w--current {
+          opacity: 1 !important;
+        }
+
+        .filter-item__line {
+          background: currentColor;
+        }
+
+        .service-grid__item:last-of-type {
+          border: none;
+        }
+
+        .filter-w__inner,
+        .project-item__media-w,
+        .swiper-slide.is--popular__list,
+        .marquee-item {
+          will-change: transform;
+        }
+
+        .w-tab-link.w--current .tab-link__circle {
+          opacity: 1;
+        }
+
+        @media screen and (min-width: 1921px) {
+          .logo-grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          }
+
+          .logo-grid__item.show-xl {
+            display: block;
+          }
+        }
+
+        .section.clip {
+          overflow-x: clip;
+        }
+
+        .project-thumb__video {
+          position: absolute;
+          height: 100%;
+          min-width: 100%;
+          object-fit: cover;
+        }
+
+        .popular-thumb__item .tab-link__img {
+          opacity: 0.5;
+        }
+
+        .popular-thumb__item.active .tab-link__img {
+          opacity: 1;
+        }
+
+        .project-thumb__video {
+          position: absolute;
+          height: 100%;
+        }
+
+        .preload-trigger {
+          width: 100px;
+          height: 10px;
+          visibility: hidden;
+        }
+
+        @media screen and (min-width: 1800px) {
+          .project-item:hover {
+            flex-grow: 3.13 !important;
+          }
+        }
+
+        @media screen and (min-width: 2200px) {
+          .project-item:hover {
+            max-width: 66.7%;
+            flex-grow: 3.1 !important;
+            flex-basis: auto;
+          }
+        }
+      </style>
+    </div>
+  </div>
+  <div class="page-w">
+    <div class="cursor-w pointer-off">
+      <div class="cursor-e">
+        <div class="cursor-e__dot"></div>
+        <div class="cursor-e__text-w">
+          <div class="p-small is--bold">scroll to see more work</div>
+          <div class="cursor-e__underline"></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-w no--footer">
+      <section class="section is--work_top">
+        <div class="main-c">
+          <div class="project-list__wrapper">
+            <div class="project-w w-dyn-list">
+              <div role="list" class="project-list w-dyn-items">
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/73-questions"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video class="project-thumb__video" loop muted>
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Swift%20new%20file.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23.png"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-500.png   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-800.png   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-1080.png 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-1600.png 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23.png        2056w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">73 Questions</h2>
+                    <h3 class="p-reg">Vogue/CNE</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/beautyfest-2021-2022"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video class="project-thumb__video" loop muted>
+                        <source
+                          src="https://studio-sabia.b-cdn.net/BeautyFest%202022%20FULL%20SHOW%20ft%20Hailey%20Bieber%2C%20Sssniperwolf%2C%20Jackie%20Aina%2C%20Jennifer%20Aniston%20more.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-2000.jpg 2000w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM.jpg        2152w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">BeautyFest 2021 &amp;2022</h2>
+                    <h3 class="p-reg">YouTube</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/turn-the-dial-sessions"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video class="project-thumb__video" loop muted>
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Bose%20clip.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11.jpg        1920w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">Turn the Dial Sessions</h2>
+                    <h3 class="p-reg">Bose</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/audible-expert-series"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video class="project-thumb__video" loop muted>
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Kelly%20Rowland%2C%20Sara%20Bareilles%2C%20Daveed%20Diggs%20Show%20Off%20Their%20Vocal%20Warm-Ups%20Audible.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-2000.jpg 2000w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM.jpg        2582w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">Audible Expert Series</h2>
+                    <h3 class="p-reg">Audible</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-w w-dyn-list">
+              <div role="list" class="project-list w-dyn-items">
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/lgbtq-skate-community-spotlight"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video
+                        class="project-thumb__video"
+                        loop
+                        muted
+                        loading="lazy"
+                      >
+                        <source
+                          src="https://studio-sabia.b-cdn.net/clip%20Marbie_6.22.22_3pm.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-500.png   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-800.png   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1080.png 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1600.png 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png        1924w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">
+                      LGBTQ+ Skate Community Spotlight
+                    </h2>
+                    <h3 class="p-reg">Instagram</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/watch-history-interview"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video
+                        class="project-thumb__video"
+                        loop
+                        muted
+                        loading="lazy"
+                      >
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Youtube%20history%20clip.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-2000.jpg 2000w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-2600.jpg 2600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-3200.jpg 3200w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010.jpg        3840w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">Watch History Interview</h2>
+                    <h3 class="p-reg">YouTube</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/always-ready"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video
+                        class="project-thumb__video"
+                        loop
+                        muted
+                        loading="lazy"
+                      >
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Trimmed%20Tyler%20Herro.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-2000.jpg 2000w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM.jpg        2590w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">Always Ready</h2>
+                    <h3 class="p-reg">Therabody</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div role="listitem" class="project-item w-dyn-item">
+                  <a
+                    href="/projects/billie-eilish-same-interview-one-year-later"
+                    class="project-item__media-w w-inline-block"
+                  >
+                    <div class="project-item__media w-embed">
+                      <video
+                        class="project-thumb__video"
+                        loop
+                        muted
+                        loading="lazy"
+                      >
+                        <source
+                          src="https://studio-sabia.b-cdn.net/Eilish%20clip.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div data-opacity="30" class="item-overlay"></div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM.jpg"
+                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
+                      srcset="
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-500.jpg   500w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-800.jpg   800w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-1080.jpg 1080w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-1600.jpg 1600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-2000.jpg 2000w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-2600.jpg 2600w,
+                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM.jpg        2750w
+                      "
+                      class="project-item__media is--thumb"
+                    />
+                  </a>
+                  <div class="project-item__info-w pointer-off">
+                    <h2 class="p-reg is--bold">
+                      Billie Eilish: Same Interview, One Year Later
+                    </h2>
+                    <h3 class="p-reg">Vanity Fair/CNE</h3>
+                    <div class="flex-h gap-tiny a-center w-condition-invisible">
+                      <img
+                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
+                        loading="lazy"
+                        alt=""
+                        class="views-icon"
+                      />
+                      <div class="p-reg w-dyn-bind-empty"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script
+    src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64b30f8a8f1db910fb47de07"
+    type="text/javascript"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/js/webflow.f275f8150.js"
+    type="text/javascript"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // —————  100VH MINUS NAV  —————
+    const appHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+    };
+    window.addEventListener("resize", appHeight);
+    appHeight();
+    window.addEventListener("DOMContentLoaded", (event) => {
+      appHeight();
+    });
+
+    // ————— LENIS
+    ("use strict");
+    // fix lenis in safari
+    let lenis;
+
+    if (Webflow.env("editor") === undefined) {
+      lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+        gestureOrientation: "vertical",
+        normalizeWheel: false,
+        smoothTouch: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      $("[data-lenis-start]").on("click", function () {
+        lenis.start();
+      });
+      $("[data-lenis-stop]").on("click", function () {
+        lenis.stop();
+      });
+      $("[data-lenis-toggle]").on("click", function () {
+        $(this).toggleClass("stop-scroll");
+        if ($(this).hasClass("stop-scroll")) {
+          lenis.stop();
+        } else {
+          lenis.start();
+        }
+      });
+
+      function connectToScrollTrigger() {
+        lenis.on("scroll", ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+          lenis.raf(time * 1000);
+        });
+      }
+      connectToScrollTrigger();
+    }
+
+    // ————— GLOBAL STUFF
+    const homeParallax = gsap.timeline();
+
+    homeParallax
+      .to('[data-home-parallax="target"]', {
+        yPercent: 60,
+        ease: "linear",
+      })
+      .to(
+        '[data-home-parallax="cover"]',
+        {
+          opacity: 0.8,
+          ease: "linear",
+        },
+        0
+      );
+    // 0 means start at the beginning of the timeline
+
+    ScrollTrigger.create({
+      trigger: '[data-home-parallax="trigger"]',
+      start: "top bottom",
+      end: "top top",
+      scrub: true,
+      ease: "linear",
+      animation: homeParallax,
+    });
+
+    gsap.defaults({
+      ease: "power4.inOut",
+      duration: 0.6,
+    });
+    let currentY = 0;
+    let targetY = 0;
+    let lerpRate = 0.05;
+    let infoHalfHeight;
+    let counter = {
+      value: 0,
+    };
+    let loaderDuration = 3;
+    let overlays = document.querySelectorAll("[data-opacity]");
+    let overlayOpacity;
+    let popularSlider;
+    let navBar = document.querySelector(".nav-w");
+    let mainW = document.querySelector(".main-w");
+    let mainWNamespace = mainW?.getAttribute("data-namespace");
+    const isDesktop = window.innerWidth > 991;
+    if (!sessionStorage.getItem("firstLoad")) {
+      sessionStorage.setItem("firstLoad", "true");
+    }
+
+    initDynamicOverlay();
+
+    if (
+      mainWNamespace === "home" &&
+      sessionStorage.getItem("firstLoad") === "true"
+    ) {
+      let loaderText = document.querySelector(".load-percent");
+
+      function updateLoaderText() {
+        let progress = Math.round(counter.value);
+        loaderText.textContent = progress;
+      }
+
+      let loadTimeline = gsap.timeline({
+        onComplete: () => {
+          ScrollTrigger.refresh();
+          initialize();
+          sessionStorage.setItem("firstLoad", "false");
+        },
+      });
+
+      loadTimeline
+        .fromTo(
+          ".load-inner",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            delay: 0.05,
+            ease: "ease",
+          }
+        )
+        .to(counter, {
+          value: 100,
+          onUpdate: updateLoaderText,
+          duration: loaderDuration,
+          ease: "expo.out",
+        })
+        .to(".load-bg", {
+          height: 0,
+          duration: 1,
+          ease: "expo.inOut",
+        })
+        .to(
+          ".load-inner",
+          {
+            top: 0,
+            duration: 1,
+            ease: "expo.inOut",
+          },
+          "<"
+        )
+        .to(
+          ".main-w",
+          {
+            y: 0,
+            duration: 1,
+            ease: "expo.inOut",
+          },
+          "<"
+        )
+        .to(
+          ".load-inner",
+          {
+            opacity: 0,
+            duration: 1,
+          },
+          "<"
+        )
+        .set(
+          ".nav-item__list",
+          {
+            display: "flex",
+            onComplete: () => {
+              gsap.from(".nav-link", {
+                opacity: 0,
+                stagger: {
+                  each: 0.1,
+                  from: "end",
+                },
+              });
+            },
+          },
+          ">-=0.5"
+        )
+        .set(".load-w", {
+          display: "none",
+        })
+        .set(".load-inner", {
+          display: "none",
+        });
+    } else {
+      if (mainWNamespace === "about") {
+        gsap.fromTo(
+          ".text-underline",
+          {
+            scaleX: 0,
+          },
+          {
+            scaleX: 1,
+            duration: 0.8,
+            delay: 0.6,
+          }
+        );
+      }
+
+      let loadAnimation = gsap.timeline({
+        onComplete: () => {
+          ScrollTrigger.refresh();
+          initialize();
+        },
+      });
+
+      loadAnimation
+        .set(".load-inner", {
+          display: "none",
+        })
+        .to(
+          ".main-w",
+          {
+            y: "0vh",
+            duration: 1,
+            ease: "expo.inOut",
+          },
+          0
+        )
+        .to(
+          ".load-bg",
+          {
+            height: "0vh",
+            duration: 1,
+            ease: "expo.inOut",
+          },
+          0
+        )
+        .set(".load-w", {
+          display: "none",
+        });
+    }
+
+    function initialize() {
+      if (isDesktop) {
+        initCursor();
+        initProjectCardHover();
+        initFooterTrail();
+      }
+      if (mainWNamespace === "home") {
+        initPopularSlider();
+      }
+    }
+
+    ScrollTrigger.create({
+      trigger: ".main-w",
+      start: "top+=10 top",
+      onEnter: function () {
+        navBar.classList.add("is--scrolled");
+      },
+      onLeaveBack: function () {
+        navBar.classList.remove("is--scrolled");
+      },
+    });
+
+    function initDynamicOverlay() {
+      // Dynamically set overlay opacity
+      overlays.forEach(function (overlay) {
+        overlayOpacity = overlay.getAttribute("data-opacity") / 100;
+        overlay.style.opacity = overlayOpacity;
+      });
+    }
+
+    function initProjectCardHover() {
+      if (!document.querySelector(".project-item")) {
+        return;
+      }
+      // —————————— Event listeners on project items
+      const projectItems = document.querySelectorAll(".project-item");
+      projectItems.forEach(function (projectItem) {
+        // Variables for Hover animation
+        let video = projectItem.querySelector("video");
+        let overlay = projectItem.querySelector(".item-overlay");
+        let infoWrapper = projectItem.querySelector(".project-item__info-w");
+        let infoItems = [...infoWrapper.children];
+
+        // Hover animation on project item
+        projectItem.addEventListener("mouseenter", function () {
+          gsap.fromTo(
+            infoItems,
+            {
+              opacity: 0,
+            },
+            {
+              overwrite: true,
+              opacity: 1,
+              duration: 0.4,
+              stagger: {
+                each: 0.05,
+              },
+            }
+          );
+          gsap.fromTo(
+            overlay,
+            {
+              opacity: overlayOpacity,
+            },
+            {
+              opacity: 0,
+            }
+          );
+
+          projectItems.forEach((otherProjectItem) => {
+            if (otherProjectItem !== projectItem) {
+              const otherOverlay =
+                otherProjectItem.querySelector(".item-overlay");
+              gsap.to(otherOverlay, {
+                opacity: 0.6,
+              });
+            }
+          });
+
+          if (video) {
+            video.play();
+          }
+        });
+        projectItem.addEventListener("mouseleave", function () {
+          gsap.fromTo(
+            infoItems,
+            {
+              opacity: 1,
+            },
+            {
+              overwrite: true,
+              opacity: 0,
+              duration: 0.4,
+              stagger: {
+                each: 0.05,
+                from: "end",
+              },
+            }
+          );
+          gsap.fromTo(
+            overlay,
+            {
+              opacity: 0,
+            },
+            {
+              opacity: overlayOpacity,
+            }
+          );
+
+          projectItems.forEach((otherProjectItem) => {
+            const otherOverlay =
+              otherProjectItem.querySelector(".item-overlay");
+            gsap.to(otherOverlay, {
+              opacity: overlayOpacity,
+            });
+          });
+
+          if (video) {
+            video.pause();
+          }
+        });
+
+        projectItem.addEventListener("mousemove", function (event) {
+          let rect = this.getBoundingClientRect();
+          let y = event.clientY - rect.top;
+          let infoRect = infoWrapper.getBoundingClientRect();
+          infoHalfHeight = infoRect.height / 2;
+          let padding = 16;
+
+          let topBound = infoHalfHeight + padding;
+          let bottomBound = rect.height - (infoHalfHeight + padding);
+
+          targetY = Math.min(Math.max(y, topBound), bottomBound);
+        });
+
+        function animate() {
+          currentY += (targetY - currentY) * lerpRate;
+          infoWrapper.style.transform = `translateY(${
+            currentY - infoHalfHeight
+          }px)`;
+          requestAnimationFrame(animate);
+        }
+        animate();
+      });
+    }
+
+    function initCursor() {
+      // Cursor Variables
+      const cursorWrapper = document.querySelector(".cursor-w");
+      const cursorDot = document.querySelector(".cursor-e__dot");
+      const cursorP = cursorWrapper.querySelector(".p-small");
+      const cursorTextTl = gsap.timeline({
+        paused: true,
+        onReverseComplete: () => {
+          cursorWrapper.classList.remove("show");
+        },
+      });
+      cursorTextTl
+        .fromTo(
+          cursorDot,
+          {
+            scale: 0,
+          },
+          {
+            scale: 1,
+          }
+        )
+        .fromTo(
+          cursorP,
+          {
+            y: -5,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+          },
+          "<"
+        )
+        .fromTo(
+          ".cursor-e__underline",
+          {
+            scaleX: 0,
+          },
+          {
+            scaleX: 1,
+          },
+          "<"
+        );
+      const cursorDotTl = gsap.timeline({
+        paused: true,
+        onReverseComplete: () => {
+          cursorWrapper.classList.remove("show");
+          cursorWrapper.classList.remove("is--diff");
+          cursorDot.classList.remove("is--large");
+        },
+      });
+      cursorDotTl.fromTo(
+        cursorDot,
+        {
+          scale: 0,
+        },
+        {
+          scale: 1,
+        }
+      );
+
+      // Custom cursor with text
+      document.querySelectorAll("[data-cursor]").forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+          const cursorText = element.getAttribute("data-cursor-text");
+          cursorP.textContent = cursorText;
+          cursorWrapper.classList.add("show");
+          cursorTextTl.timeScale(1).play();
+        });
+        element.addEventListener("mouseleave", () => {
+          cursorTextTl.timeScale(1.5).reverse();
+        });
+      });
+      // Custom cursor with large dot
+      document.querySelectorAll("[data-cursor-dot]").forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+          cursorWrapper.classList.add("show");
+          cursorWrapper.classList.add("is--diff");
+          cursorDot.classList.add("is--large");
+          cursorDotTl.timeScale(1).play();
+        });
+        element.addEventListener("mouseleave", () => {
+          cursorDotTl.timeScale(1.5).reverse();
+        });
+      });
+    }
+
+    function initHomeParallax() {
+      gsap.fromTo(
+        ".hero-img",
+        {
+          y: "-5%",
+        },
+        {
+          y: "0%",
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".hero-w",
+            start: "top top",
+            end: "bottom top-=20%",
+            scrub: 1,
+          },
+        }
+      );
+    }
+
+    function initFooterTrail() {
+      if (
+        !document.querySelector(".footer-trail__wrapper") ||
+        window.innerWidth < 992
+      ) {
+        return;
+      }
+      let trailInterval;
+      const trailImageTimestamps = new Map();
+      const trailImages = Array.from(
+        document.querySelectorAll(".footer-trail__img")
+      );
+      let globalIndex = 0,
+        last = {
+          x: 0,
+          y: 0,
+        };
+
+      const MathUtils = {
+        lerp: (a, b, n) => (1 - n) * a + n * b,
+        distance: (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1),
+      };
+
+      const activate = (trailImage, x, y) => {
+        const rect = trailImage.getBoundingClientRect();
+        trailImage.style.left = `${x - rect.width / 2}px`;
+        trailImage.style.top = `${y - rect.height / 2}px`;
+        trailImage.style.zIndex = globalIndex;
+        trailImage.style.display = "block";
+        trailImageTimestamps.set(trailImage, Date.now());
+
+        gsap.fromTo(
+          trailImage,
+          {
+            opacity: 0,
+            scale: 1,
+            visibility: "hidden",
+          },
+          {
+            opacity: 1,
+            scale: 1,
+            visibility: "visible",
+            duration: 0.2,
+            overwrite: true,
+          }
+        );
+
+        last = {
+          x,
+          y,
+        };
+      };
+      const distanceFromLast = (x, y) => {
+        return MathUtils.distance(x, y, last.x, last.y);
+      };
+      const handleOnMove = (e) => {
+        if (distanceFromLast(e.clientX, e.clientY) > window.innerWidth / 20) {
+          const lead = trailImages[globalIndex % trailImages.length],
+            tail = trailImages[(globalIndex - 5) % trailImages.length];
+
+          activate(lead, e.clientX, e.clientY);
+
+          if (tail) {
+            gsap.to(tail, {
+              opacity: 0,
+              scale: 0.2,
+              duration: 0.8,
+              ease: "expo.out",
+              onComplete: () => {
+                gsap.set(tail, {
+                  visibility: "hidden",
+                });
+              },
+            });
+          }
+
+          globalIndex++;
+        }
+      };
+      const handleInterval = () => {
+        const currentTime = Date.now();
+        for (const [trailImage, timestamp] of trailImageTimestamps.entries()) {
+          if (currentTime - timestamp > 250) {
+            gsap.to(trailImage, {
+              opacity: 0,
+              scale: 0.2,
+              duration: 0.8,
+              ease: "expo.out",
+              onComplete: () => {
+                gsap.set(trailImage, {
+                  visibility: "hidden",
+                });
+                trailImageTimestamps.delete(trailImage);
+              },
+            });
+          }
+        }
+      };
+      ScrollTrigger.create({
+        trigger: ".section.is--footer_top",
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () => {
+          window.addEventListener("mousemove", handleOnMove);
+          window.addEventListener("ontouchmove", (e) =>
+            handleOnMove(e.touches[0])
+          );
+          trailInterval = setInterval(handleInterval, 100);
+        },
+        onLeaveBack: () => {
+          window.removeEventListener("mousemove", handleOnMove);
+          window.removeEventListener("ontouchmove", (e) =>
+            handleOnMove(e.touches[0])
+          );
+          clearInterval(trailInterval);
+        },
+      });
+    }
+
+    // On Link Click
+    $("a").on("click", function (e) {
+      if (
+        $(this).prop("hostname") === window.location.host &&
+        $(this).attr("href").indexOf("#") === -1 &&
+        $(this).attr("target") !== "_blank"
+      ) {
+        e.preventDefault();
+        let transitionURL = $(this).attr("href");
+        gsap.set(".load-inner", {
+          display: "none",
+        });
+        gsap.set(".load-w", {
+          display: "flex",
+        });
+        gsap.to(".main-w", {
+          y: "25vh",
+          duration: 1,
+          ease: "expo.inOut",
+        });
+        gsap.to(".load-bg", {
+          height: "100vh",
+          duration: 1,
+          ease: "expo.inOut",
+          onComplete: () => {
+            window.location = transitionURL;
+          },
+        });
+      }
+    });
+
+    // On Back Button Tap
+    window.onpageshow = function (event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    };
+  </script>
+</div>

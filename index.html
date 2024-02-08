@@ -8,6 +8,10 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
+
+  <!-- Components scripts -->
+  <script src="/Components/Footer/Footer.js"></script>
+  <script src="/Components/Content/Content.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -21,15 +25,8 @@
     rel="stylesheet"
   />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="other.css" />
-  <link rel="stylesheet" href="text.css" />
-  <link rel="stylesheet" href="/css/master.css" />
   <style>
-    .temp {
-      background-color: rgb(5, 5, 19);
-    }
     .thistext {
       transition: all 0.5s;
 
@@ -47,673 +44,65 @@
       }
     }
   </style>
-  <script src="Components.js"></script>
+  <!-- text Animiation -->
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="text.css" />
 </head>
-<body class="bg-black">
-  <div class="z-10 w-full fixed h-screen">
-    <video
-      autoplay="autoplay"
-      playsinline="playsinline"
-      muted="muted"
-      data-video-player-target="player"
-      class="w-full h-full object-cover"
-      loop
-    >
-      <source
-        src="https://static.vecteezy.com/system/resources/previews/007/525/563/mp4/loop-of-smoke-fire-sparks-rising-up-particle-free-video.mp4"
-        type="video/mp4"
-      />
-      <source
-        src="https://static.vecteezy.com/system/resources/previews/007/525/563/loop-of-smoke-fire-sparks-rising-up-particle-free-video.webm"
-        type="video/webm"
-      />
-    </video>
-  </div>
-  <div class="backdrop-blur relative z-20">
-    <!-- Text Animation -->
+<body>
+  <div class="z-10">
+    <div class="z-10 w-full fixed h-screen">
+      <!-- <video
+        autoplay="autoplay"
+        playsinline="playsinline"
+        muted="muted"
+        data-video-player-target="player"
+        class="w-full h-full object-cover"
+        loop
+      >
+        <source
+          src="https://static.vecteezy.com/system/resources/previews/007/525/563/mp4/loop-of-smoke-fire-sparks-rising-up-particle-free-video.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://static.vecteezy.com/system/resources/previews/007/525/563/loop-of-smoke-fire-sparks-rising-up-particle-free-video.webm"
+          type="video/webm"
+        />
+      </video> -->
+    </div>
+    <div class="backdrop-blur relative z-20">
+      <!-- Text Animation -->
 
-    <section class="h-screen flex flex-col align-middle justify-center">
-      <div id="textbox">
-        <span
-          id="text1"
-          class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
-        ></span>
-        <span
-          id="text2"
-          class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
-        ></span>
+      <section class="h-screen flex flex-col align-middle justify-center">
+        <div id="textbox">
+          <span
+            id="text1"
+            class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
+          ></span>
+          <span
+            id="text2"
+            class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
+          ></span>
 
-        <svg id="filters">
-          <defs>
-            <filter id="threshold">
-              <feColorMatrix
-                in="SourceGraphic"
-                type="matrix"
-                values="1 0 0 0 0
+          <svg id="filters">
+            <defs>
+              <filter id="threshold">
+                <feColorMatrix
+                  in="SourceGraphic"
+                  type="matrix"
+                  values="1 0 0 0 0
                           0 1 0 0 0
                           0 0 1 0 0
                           0 0 0 255 -140"
-              />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-    </section>
-    <!-- You maybe here for one of these -->
-    <section class="relative z-20 text-center p-4">
-      <h1 class="text-white lg:mb-20 lg:text-3xl text-3xl font-semibold">
-        You maybe here to visit one of these
-      </h1>
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </section>
+      <!-- parallax box -->
+      <my-content></my-content>
 
-      <div class="flex flex-row gap-10 m-2 flex-wrap justify-center">
-        <div class="card">
-          <div>
-            <!-- <h1>Rimmind</h1> -->
-            <img
-              class="svgIMG"
-              style="height: 150px"
-              src="https://raw.githubusercontent.com/KondaShivaradhan/rimexpo/main/rimmind/assets/icon.png"
-              alt=""
-            />
-          </div>
-          <div class="card__content">
-            <p class="card__title">Rimmind</p>
-            <p class="card__description">
-              Safely store thoughts, organize documents, and plan your life with
-              encrypted data storage. Click to explore and enhance your personal
-              organization!
-            </p>
-            <a href="https://rimmind.blazingbane.com" target="_blank">
-              <button class="p-1 px-4 m-2 rounded-2xl bg-slate-600 text-white">
-                Learn more
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-            ></path>
-          </svg>
-          <div class="card__content">
-            <p class="card__title">Card Title</p>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-            ></path>
-          </svg>
-          <div class="card__content">
-            <p class="card__title">Card Title</p>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- parallax box -->
-    <section data-home-parallax="trigger" class="section">
-      <div class="main-c">
-        <div class="project-list__wrapper">
-          <div class="project-w w-dyn-list">
-            <div
-              data-video-wrap=""
-              role="list"
-              class="project-list w-dyn-items"
-            >
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/73-questions"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -2.6656%, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Swift%20new%20file.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/651690dbcff67e78b5fef4a1_Screenshot%202023-09-29%20at%2010.54.23.png        2056w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -2.6656%, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">73 Questions</h2>
-                  <h3 class="p-reg">Vogue/CNE</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/beautyfest-2021-2022"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.54305%, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/BeautyFest%202022%20FULL%20SHOW%20ft%20Hailey%20Bieber%2C%20Sssniperwolf%2C%20Jackie%20Aina%2C%20Jennifer%20Aniston%20more.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edc7d36b0c9256a96d77e7_Screenshot%202023-04-18%20at%2016.13%202.png        1920w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.54305%, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">BeautyFest 2021 &amp; 2022</h2>
-                  <h3 class="p-reg">YouTube</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/turn-the-dial-sessions"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Bose%20clip.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a3fbd8ee70c60b56920b_Group%2090791.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a3fbd8ee70c60b56920b_Group%2090791-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a3fbd8ee70c60b56920b_Group%2090791-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a3fbd8ee70c60b56920b_Group%2090791-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a3fbd8ee70c60b56920b_Group%2090791.png        1920w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">Turn the Dial Sessions</h2>
-                  <h3 class="p-reg">Bose</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/audible-expert-series"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Kelly%20Rowland%2C%20Sara%20Bareilles%2C%20Daveed%20Diggs%20Show%20Off%20Their%20Vocal%20Warm-Ups%20Audible.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10-p-2000.png 2000w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64ff1e1820cba285c4d06c61_Screenshot%202023-09-11%20at%2016.02.10.png        2560w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">Audible Expert Series</h2>
-                  <h3 class="p-reg">Audible</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-w w-dyn-list">
-            <div role="list" class="project-list w-dyn-items">
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/lgbtq-skate-community-spotlight"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/clip%20Marbie_6.22.22_3pm.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png        1924w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">
-                    LGBTQ+ Skate Community Spotlight
-                  </h2>
-                  <h3 class="p-reg">Instagram</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/watch-history-interview"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Youtube%20history%20clip.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/6516a9b52a249a9a2e91983b_Screenshot%202023-09-29%20at%2012.40.11.png        2180w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">Watch History Interview</h2>
-                  <h3 class="p-reg">YouTube</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/always-ready"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Trimmed%20Tyler%20Herro.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/64edcce951a9a70333b7c4a1_image%2049.png        1920w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">Always Ready</h2>
-                  <h3 class="p-reg">Therabody</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-              <div role="listitem" class="project-item w-dyn-item">
-                <a
-                  href="/projects/billie-eilish-same-interview-one-year-later"
-                  class="project-item__media-w w-inline-block"
-                  ><div
-                    class="project-item__media w-embed"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    <video
-                      class="project-thumb__video"
-                      loop=""
-                      muted=""
-                      loading="lazy"
-                    >
-                      <source
-                        src="https://studio-sabia.b-cdn.net/Eilish%20clip.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div
-                    data-opacity="30"
-                    class="item-overlay"
-                    style="opacity: 0.3"
-                  ></div>
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157.png"
-                    sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                    srcset="
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157-p-500.png   500w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157-p-800.png   800w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157-p-1080.png 1080w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157-p-1600.png 1600w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157-p-2000.png 2000w,
-                      https://assets-global.website-files.com/64b326497af835ff710aa2b1/650817f16144c52eee18ce72_Group%209157.png        2560w
-                    "
-                    class="project-item__media is--thumb"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                /></a>
-                <div class="project-item__info-w pointer-off">
-                  <h2 class="p-reg is--bold">
-                    Billie Eilish: Same Interview, One Year Later
-                  </h2>
-                  <h3 class="p-reg">Vanity Fair/CNE</h3>
-                  <div class="flex-h gap-tiny a-center w-condition-invisible">
-                    <img
-                      src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                      loading="lazy"
-                      alt=""
-                      class="views-icon"
-                    />
-                    <div class="p-reg w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <my-footer class="text-white"></my-footer>
+      <my-footer></my-footer>
+    </div>
   </div>
 </body>
