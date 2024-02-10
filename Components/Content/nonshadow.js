@@ -1,4 +1,9 @@
-setTimeout(() => {
+console.log("its me");
+const contentDiv = document.getElementById("ContentHere");
+// Check if the element is found
+if (contentDiv) {
+  // Element found, perform actions
+  console.log("my-content is fully defined");
   const data = [
     [
       [
@@ -6,13 +11,14 @@ setTimeout(() => {
         "https://www.gifcen.com/wp-content/uploads/2022/07/twitch-gif-3.gif",
         ["https://giffiles.alphacoders.com/137/137529.gif", ""],
         "I stream live coding sessions while developing a variety of applications, from automation scripts to web and mobile apps.   Join me as I code and share insights into software development",
-        "Twitch.tv",
+        "https://www.twitch.tv/blazingbane",
       ],
       [
         "Youtube",
         "https://bizglide.in/images/blog/youtube-seo.gif",
         ["", "/Public/lottie/Youtube.json"],
         "On this platform you can fine a variety of content like   personal vlogs, Gaming, and some offline content.   I also play games and live stream them.  Join me for some gaming fun",
+        "https://www.youtube.com/channel/UCPFM_Ug62Ei3CUfvquG4KOg",
       ],
       [
         "Blogs",
@@ -21,7 +27,9 @@ setTimeout(() => {
           "https://nextdayanimations.com/wp-content/uploads/2022/02/typing.gif",
           "",
         ],
-        "As a believer of sharing knowledge and experiences i started this blogging journey to help people get some things I have been through and learned.",
+        `This is the Home for my Blogs. I share guides, insights and a few findings of various topics.
+I share things which are useful for others in a context of Tech, Health, Documents, Applications etc.`,
+        "https://blogs.blazingbane.com",
       ],
       [
         "Rimmind",
@@ -31,13 +39,12 @@ setTimeout(() => {
           "",
         ],
         "A fully costume developed application to organize things running in our brain do check this out a cool one",
+        "https://rimmind.blazingbane.com",
       ],
     ],
     [],
   ];
   //Heading,Backimg, [IconImg,IconLottie],Text,link
-  var contentBlock = document.getElementById("ContentHere");
-  console.log(contentBlock);
   data.forEach((r) => {
     var thisrow = document.createElement("div");
     thisrow.className = "project-w w-dyn-list";
@@ -47,6 +54,7 @@ setTimeout(() => {
       var listItem = document.createElement("div");
       listItem.className = "project-item w-dyn-item";
       listItem.innerHTML = `
+      
         <div
                  
                     class="project-item__media-w w-inline-block"
@@ -81,8 +89,8 @@ setTimeout(() => {
     `
        }
     <div class="ceck">
-    <h2>${item[0]}</h2>
-        <h4 class="text-center w-96">${item[3]}</h4>
+    <h2 class="text-3xl font-extrabold">${item[0]}</h2>
+        <h4 class="text-xl text-center w-96">${item[3]}</h4>
         <br>
          <div>
         <a  target="_blank"
@@ -99,9 +107,7 @@ padding-right: 15px;
 padding-bottom:7px;
 padding-left:15px;
   font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
@@ -152,9 +158,6 @@ padding-right: 7px;
 padding-bottom:3px;
 padding-left:7px;
   font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
@@ -166,7 +169,7 @@ padding-left:7px;
   border: 0;
  
         "
-        ><h5>Click more</h5></button></a>
+        ><h5 class="text-sm">Click more</h5></button></a>
     </div>
                     <div class="flex-h gap-tiny a-center w-condition-invisible">
                       <img
@@ -182,8 +185,11 @@ padding-left:7px;
       roleDiv.appendChild(listItem);
     });
     thisrow.appendChild(roleDiv);
-    contentBlock.appendChild(roleDiv);
+    contentDiv.appendChild(roleDiv);
   });
 
   console.log("this is done");
-}, 1000);
+} else {
+  // Element not found
+  console.error("Could not find the content div");
+}

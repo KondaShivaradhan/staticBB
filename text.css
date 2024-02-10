@@ -15,9 +15,11 @@
   #textbox {
       margin: auto;
       width: 100vw;
+      position: relative;
+      top: -50px;
       font-weight: bolder;
       color: rgb(26, 26, 26);
-      filter: url(#threshold) blur(0.4px);
+      filter: url(#threshold)
   }
 
   #text1,

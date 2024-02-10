@@ -13,17 +13,35 @@
 
   <!-- Components scripts -->
   <script src="/Components/Footer/Footer.js"></script>
+  <script src="/Components/Nav/nav.js"></script>
   <script src="/Components/Content/Content.js"></script>
+  <!-- bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <!-- tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+    rel="stylesheet"
+  />
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
     rel="stylesheet"
   />
 
@@ -52,9 +70,7 @@
   <link rel="stylesheet" href="text.css" />
 </head>
 <body>
-  <div class="z-10">
-    <div class="z-10 w-full fixed h-screen">
-      <!-- <video
+  <!-- <video
         autoplay="autoplay"
         playsinline="playsinline"
         muted="muted"
@@ -71,45 +87,75 @@
           type="video/webm"
         />
       </video> -->
-    </div>
-    <div class="backdrop-blur relative z-20">
-      <!-- Text Animation -->
+  <!-- nav -->
+  <my-nav></my-nav>
+  <!-- Text Animation -->
+  <div style="height: 40vh"></div>
+  <section class="min-h-min flex flex-col align-middle justify-center">
+    <div id="textbox">
+      <span
+        id="text1"
+        class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
+      ></span>
+      <span
+        id="text2"
+        class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
+      ></span>
 
-      <section class="h-screen flex flex-col align-middle justify-center">
-        <div id="textbox">
-          <span
-            id="text1"
-            class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
-          ></span>
-          <span
-            id="text2"
-            class="sm:text-4xl md:text-4xl text-4xl lg:text-7xl"
-          ></span>
-
-          <svg id="filters">
-            <defs>
-              <filter id="threshold">
-                <feColorMatrix
-                  in="SourceGraphic"
-                  type="matrix"
-                  values="1 0 0 0 0
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values="1 0 0 0 0
                           0 1 0 0 0
                           0 0 1 0 0
                           0 0 0 255 -140"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-      </section>
-      <!-- parallax box -->
-      <my-content></my-content>
-
-      <my-footer></my-footer>
+            />
+          </filter>
+        </defs>
+      </svg>
     </div>
+  </section>
+  <div class="caption m-10">
+    <center>
+      <span>
+        <p
+          class="text-3xl w-full md:w-1/2 font-bold"
+          style="font-family: 'Caveat', cursive"
+        >
+          Well, hello there! 👋 , While making this website I felt this space is
+          looking dull so i just filled this with some text. Buckle up, because
+          we're about to embark on a rollercoaster ride of memes, jokes, and
+          maybe even a dash of wisdom (if we're feeling particularly profound).
+          So sit back, relax, and let the internet shenanigans begin! 🎉🚀 -
+          ChatGPT
+        </p>
+      </span>
+    </center>
   </div>
+  <!-- parallax box -->
+  <my-content></my-content>
+  <!-- <iframe
+    id="myIframe"
+    style="width: 100%"
+    src="/Components/Content/Sample.html"
+    frameborder="0"
+  ></iframe>
+  <script>
+    const iframe = document.getElementById("myIframe");
+
+    iframe.addEventListener("load", function () {
+      const contentHeight =
+        iframe.contentWindow.document.body.scrollHeight + "px";
+      iframe.style.height = contentHeight;
+    });
+    window.addEventListener("resize", adjustIframeHeight);
+  </script> -->
+  <my-footer></my-footer>
 </body>
-<script>
+<!-- <script>
   document.addEventListener("DOMContentLoaded", function () {
     customElements.whenDefined("my-content").then(() => {
       console.log("my-content is fully defined");
@@ -118,10 +164,9 @@
       if (heading) {
         heading.textContent = "New Heading Text";
       }
-
       const script = document.createElement("script");
       script.src = "/Components/Content/ContentLoader.js";
       document.body.appendChild(script);
     });
   });
-</script>
+</script> -->
