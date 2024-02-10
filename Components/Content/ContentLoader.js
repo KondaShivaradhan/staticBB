@@ -112,7 +112,7 @@ padding-left:15px;
   word-break: break-word;
   border: 0;
         "
-        >Click more</button></a>
+        >Know more</button></a>
     </div>
     </div>
     
