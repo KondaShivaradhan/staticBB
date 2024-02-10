@@ -1,6 +1,5 @@
 <div>
   <link rel="stylesheet" href="/Components/Content/temp.css" />
-
   <div class="global">
     <div class="w-embed">
       <style>
@@ -227,426 +226,36 @@
           <style>
             .ceck {
               opacity: 0;
-              transition: all 0.7s ease;
+              color: #000000;
+              transition: all 0.4s;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
             }
             .Clogo {
-              height: 140px;
-              transition: all 0.7s ease;
+              opacity: 0;
+              height: 100px;
+              transition: all 0.2s ease-in;
             }
-            #check:hover {
-              background-color: #000000b2;
+            #backimg {
+              opacity: 1;
+
+              transition: all 0.4s;
             }
-            #check:hover > img {
-              content: url("https://giffiles.alphacoders.com/137/137529.gif");
+            #check:hover + #backimg {
+              opacity: 0;
             }
             #check:hover > .ceck {
               opacity: 1;
             }
             #check:hover > .Clogo {
+              opacity: 1;
+
               transform: scale(1.2);
             }
           </style>
-          <div class="project-list__wrapper">
-            <div class="project-w w-dyn-list">
-              <div role="list" class="project-list w-dyn-items">
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    target="_blank"
-                    href="https://rimmind.blazingbane.com"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div
-                      style="height: 100%; width: 100%"
-                      class="project-item__media w-embed"
-                    >
-                      <div
-                        id="check"
-                        class="flex gap-4 flex-col items-center justify-center z-10 h-full w-full hover:bg-transparent duration-1000 transition-all"
-                      >
-                        <!-- onmouseover="this.src='https://giffiles.alphacoders.com/137/137529.gif'" -->
-                        <!-- onmouseout="this.src='https://pngimg.com/uploads/twitch/twitch_PNG48.png'" -->
-
-                        <img
-                          loading="lazy"
-                          src="https://pngimg.com/uploads/twitch/twitch_PNG48.png"
-                          class="Clogo"
-                          alt=""
-                        />
-                        <div class="ceck">
-                          <h2>This is nice</h2>
-                        </div>
-                      </div>
-                      <img
-                        loading="lazy"
-                        src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"
-                        class="project-thumb__video"
-                      />
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-
-                  <!-- <div class="project-item__info-w">
-                    <h2 class="p-reg is--bold">73 Questions</h2>
-                    <h3 class="p-reg">Vogue/CNE</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div> -->
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/beautyfest-2021-2022"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video class="project-thumb__video" loop muted>
-                        <source
-                          src="https://studio-sabia.b-cdn.net/BeautyFest%202022%20FULL%20SHOW%20ft%20Hailey%20Bieber%2C%20Sssniperwolf%2C%20Jackie%20Aina%2C%20Jennifer%20Aniston%20more.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM-p-2000.jpg 2000w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c3b60df62ab7381601154a_Screen%20Shot%202024-02-07%20at%2011.54.57%20AM.jpg        2152w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">BeautyFest 2021 &amp;2022</h2>
-                    <h3 class="p-reg">YouTube</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/turn-the-dial-sessions"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video class="project-thumb__video" loop muted>
-                        <source
-                          src="https://studio-sabia.b-cdn.net/Bose%20clip.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2956eafa6d6a08c8fd4d3_BXPFINALSCROPPED-11.jpg        1920w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">Turn the Dial Sessions</h2>
-                    <h3 class="p-reg">Bose</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/audible-expert-series"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video class="project-thumb__video" loop muted>
-                        <source
-                          src="https://studio-sabia.b-cdn.net/Kelly%20Rowland%2C%20Sara%20Bareilles%2C%20Daveed%20Diggs%20Show%20Off%20Their%20Vocal%20Warm-Ups%20Audible.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM-p-2000.jpg 2000w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29499f305cbbd2aacdf11_Screen%20Shot%202024-02-06%20at%203.19.54%20PM.jpg        2582w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">Audible Expert Series</h2>
-                    <h3 class="p-reg">Audible</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-w w-dyn-list">
-              <div role="list" class="project-list w-dyn-items">
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/lgbtq-skate-community-spotlight"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video
-                        class="project-thumb__video"
-                        loop
-                        muted
-                        loading="lazy"
-                      >
-                        <source
-                          src="https://studio-sabia.b-cdn.net/clip%20Marbie_6.22.22_3pm.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-500.png   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-800.png   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1080.png 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079-p-1600.png 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65169d12372d4f4dd9d42c9e_Group%209079.png        1924w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">
-                      LGBTQ+ Skate Community Spotlight
-                    </h2>
-                    <h3 class="p-reg">Instagram</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/watch-history-interview"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video
-                        class="project-thumb__video"
-                        loop
-                        muted
-                        loading="lazy"
-                      >
-                        <source
-                          src="https://studio-sabia.b-cdn.net/Youtube%20history%20clip.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-2000.jpg 2000w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-2600.jpg 2600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010-p-3200.jpg 3200w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29248102518cb163562a4_Courtreezy%2010.jpg        3840w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">Watch History Interview</h2>
-                    <h3 class="p-reg">YouTube</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/always-ready"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video
-                        class="project-thumb__video"
-                        loop
-                        muted
-                        loading="lazy"
-                      >
-                        <source
-                          src="https://studio-sabia.b-cdn.net/Trimmed%20Tyler%20Herro.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM-p-2000.jpg 2000w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c2936c3c26fc0ebb08a7a5_Screen%20Shot%202024-02-06%20at%203.15.04%20PM.jpg        2590w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">Always Ready</h2>
-                    <h3 class="p-reg">Therabody</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" class="project-item w-dyn-item">
-                  <a
-                    href="/projects/billie-eilish-same-interview-one-year-later"
-                    class="project-item__media-w w-inline-block"
-                  >
-                    <div class="project-item__media w-embed">
-                      <video
-                        class="project-thumb__video"
-                        loop
-                        muted
-                        loading="lazy"
-                      >
-                        <source
-                          src="https://studio-sabia.b-cdn.net/Eilish%20clip.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <div data-opacity="30" class="item-overlay"></div>
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM.jpg"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      srcset="
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-500.jpg   500w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-800.jpg   800w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-1080.jpg 1080w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-1600.jpg 1600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-2000.jpg 2000w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM-p-2600.jpg 2600w,
-                        https://assets-global.website-files.com/64b326497af835ff710aa2b1/65c29c23791d745366a6aaf3_Screen%20Shot%202024-02-06%20at%203.52.15%20PM.jpg        2750w
-                      "
-                      class="project-item__media is--thumb"
-                    />
-                  </a>
-                  <div class="project-item__info-w pointer-off">
-                    <h2 class="p-reg is--bold">
-                      Billie Eilish: Same Interview, One Year Later
-                    </h2>
-                    <h3 class="p-reg">Vanity Fair/CNE</h3>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="https://assets-global.website-files.com/64b30f8a8f1db910fb47de07/64b5461e1d7cd2eff9d86ed4_views-eye.svg"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                      <div class="p-reg w-dyn-bind-empty"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="ContentHere" class="project-list__wrapper"></div>
         </div>
       </section>
     </main>
@@ -1321,3 +930,6 @@
     };
   </script>
 </div>
+<!-- 
+  Twitch GIF - https://bizglide.in/images/blog/youtube-seo.gif
+ -->

@@ -8,6 +8,8 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
+  <!-- lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <!-- Components scripts -->
   <script src="/Components/Footer/Footer.js"></script>
@@ -25,6 +27,7 @@
     rel="stylesheet"
   />
 
+  <!-- other -->
   <link rel="stylesheet" href="other.css" />
   <style>
     .thistext {
@@ -106,3 +109,19 @@
     </div>
   </div>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    customElements.whenDefined("my-content").then(() => {
+      console.log("my-content is fully defined");
+      const content = document.querySelector("my-content");
+      const heading = content.querySelector("h1");
+      if (heading) {
+        heading.textContent = "New Heading Text";
+      }
+
+      const script = document.createElement("script");
+      script.src = "/Components/Content/ContentLoader.js";
+      document.body.appendChild(script);
+    });
+  });
+</script>
