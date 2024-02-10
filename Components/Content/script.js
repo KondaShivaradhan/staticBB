@@ -135,75 +135,11 @@ padding-left:15px;
                         class="project-thumb__video"
                       />
                     </div>
-                    <!-- Small Img  -->
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="${item[1]}"
-                      sizes="(max-width: 479px) 95vw, (max-width: 767px) 48vw, (max-width: 991px) 47vw, 100vw"
-                      class="project-item__media is--thumb"
-                    />
+                   
                     
                   </div>
-                  <div id="smallConttent" class="project-item__info-w">
-                    <h2 class="p-reg is--bold text-center">${item[0]}</h2>
-                    <p class="text-xs w-5/6 ">${item[3]}</p>
-                     <br>
-         <div>
-        <a  target="_blank"
-        href="${item[4]}" ><button
-        style="
-  background: #5E5DF0;
-  border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-padding-top: 3px;
-padding-right: 7px;
-padding-bottom:3px;
-padding-left:7px;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
- 
-        "
-        ><h5>Click more</h5></button></a>
-    </div>
-                    <div class="flex-h gap-tiny a-center w-condition-invisible">
-                      <img
-                        src="${item[1]}"
-                        loading="lazy"
-                        alt=""
-                        class="views-icon"
-                      />
-                     
-                    </div>
+                 
                   </div>
-  <style>
-    @media (min-width: 1024px) {
-      #smallConttent {
-        display: none;
-      }
-    }
-
-    /* Show the component on touchscreens */
-    @media (hover: none) {
-      #smallConttent {
-        display: block; /* or any other display value you prefer */
-      }
-    }
-  </style>
         `;
       roleDiv.appendChild(listItem);
     });
