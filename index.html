@@ -49,48 +49,123 @@
 
   <!-- other -->
   <link rel="stylesheet" href="other.css" />
-  <style>
-    .thistext {
-      transition: all 0.5s;
+  <link rel="stylesheet" href="style.css" />
 
-      animation: scaleAnimation 2s infinite alternate ease-in-out;
-    }
-
-    /* Define the CSS animation */
-    /* Define the CSS animation */
-    @keyframes scaleAnimation {
-      from {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(1.2);
-      }
-    }
-  </style>
   <!-- text Animiation -->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <script>
+    function loaded() {
+      console.log("loaded");
+      document.getElementById("spin").style.display = "none";
+      document.getElementById("click").style.display = "inline";
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="text.css" />
+  <style>
+    #video {
+      margin: 0px;
+      width: 100vw;
+      position: fixed;
+    }
+  </style>
 </head>
-<body>
+
+<body onload="loaded()">
   <!-- <video
-        autoplay="autoplay"
-        playsinline="playsinline"
-        muted="muted"
-        data-video-player-target="player"
-        class="w-full h-full object-cover"
-        loop
-      >
-        <source
-          src="https://static.vecteezy.com/system/resources/previews/007/525/563/mp4/loop-of-smoke-fire-sparks-rising-up-particle-free-video.mp4"
-          type="video/mp4"
+    id="video"
+    autoplay="autoplay"
+    playsinline="playsinline"
+    muted="muted"
+    data-video-player-target="player"
+    class="w-full h-full object-cover"
+    loop
+  >
+    <source
+      src="https://static.vecteezy.com/system/resources/previews/007/525/563/mp4/loop-of-smoke-fire-sparks-rising-up-particle-free-video.mp4"
+      type="video/mp4"
+    />
+    <source
+      src="https://static.vecteezy.com/system/resources/previews/007/525/563/loop-of-smoke-fire-sparks-rising-up-particle-free-video.webm"
+      type="video/webm"
+    />
+  </video> -->
+  <div id="navi">
+    <div id="ncon">
+      <div>
+        <!-- <img src="gamepad.svg" id="svg" alt=""> -->
+        <svg
+          id="svg"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="gamepad"
+          class="svg-inline--fa fa-gamepad fa-w-20"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+        >
+          <path
+            fill="currentColor"
+            d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"
+          ></path>
+        </svg>
+      </div>
+      <div class="container" id="ntext">
+        <div class="wrap">
+          <!-- <i class="fas fa-spinner"></i> -->
+          <center>
+            <div id="spin" class="loading"></div>
+          </center>
+          <button id="click" class="button" onclick="myFunction()">Play</button>
+        </div>
+      </div>
+      <div id="small" class="container">
+        <img
+          src="/Public/image/logo.ico"
+          style="height: 35px; width: 35px"
+          alt="Kiwi standing on oval"
         />
-        <source
-          src="https://static.vecteezy.com/system/resources/previews/007/525/563/loop-of-smoke-fire-sparks-rising-up-particle-free-video.webm"
-          type="video/webm"
-        />
-      </video> -->
+        <a
+          name=""
+          id="edoti"
+          class="btn btn-primary"
+          href="#disc"
+          role="button"
+          title="Discord"
+        >
+          <i class="fab fa-discord"> </i
+        ></a>
+        <a
+          name=""
+          id="edoti"
+          class="btn btn-primary"
+          href="#play"
+          role="button"
+        >
+          <i class="fa fa-gamepad"> </i
+        ></a>
+        <button
+          onclick="navi()"
+          style="background: transparent; border: white solid 3px; color: white"
+          class="btn btn-secondary"
+          title=""
+        >
+          <i id="rot" class="fas fa-greater-than"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- nav -->
-  <my-nav></my-nav>
+  <!-- <my-nav></my-nav> -->
   <!-- Text Animation -->
   <div style="height: 40vh"></div>
   <section class="min-h-min flex flex-col align-middle justify-center">
@@ -139,43 +214,6 @@
   </div>
   <!-- parallax box -->
   <my-content></my-content>
-  <!-- <iframe
-    id="myIframe"
-    style="width: 100%"
-    src="/Components/Content/Sample.html"
-    frameborder="0"
-  ></iframe>
-  <script>
-    const iframe = document.getElementById("myIframe");
 
-    iframe.addEventListener("load", function () {
-      const contentHeight =
-        iframe.contentWindow.document.body.scrollHeight + "px";
-      iframe.style.height = contentHeight;
-    });
-    window.addEventListener("resize", adjustIframeHeight);
-  </script> -->
   <my-footer></my-footer>
-  <!-- Cloudflare Web Analytics -->
-  <script
-    defer
-    src="https://static.cloudflareinsights.com/beacon.min.js"
-    data-cf-beacon='{"token": "8a0ed696ce224096b62c8f0582bc7acb"}'
-  ></script>
-  <!-- End Cloudflare Web Analytics -->
 </body>
-<!-- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    customElements.whenDefined("my-content").then(() => {
-      console.log("my-content is fully defined");
-      const content = document.querySelector("my-content");
-      const heading = content.querySelector("h1");
-      if (heading) {
-        heading.textContent = "New Heading Text";
-      }
-      const script = document.createElement("script");
-      script.src = "/Components/Content/ContentLoader.js";
-      document.body.appendChild(script);
-    });
-  });
-</script> -->
