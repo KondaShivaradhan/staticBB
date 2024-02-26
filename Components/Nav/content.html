@@ -8,25 +8,35 @@
     rel="stylesheet"
   />
 
-  <div class="container flex flex-row items-center justify-evenly">
-    <div class="col-md-4 flex flex-row items-center justify-evenly">
-      <img src="/Public/svgs/bb.svg" style="height: 60px" alt="" />
-      <h1
-        style="
-          font-family: 'Caveat', cursive;
-          font-family: 'Dancing Script', cursive;
-          font-weight: bolder;
-          font-size: 40px;
-        "
-      >
-        Blazing Bane
-      </h1>
+  <div class="container">
+    <div class="row flex flex-row items-center justify-evenly">
+      <div class="col-md-4 flex flex-row items-center justify-evenly">
+        <img src="/Public/svgs/bb.svg" style="height: 60px" alt="" />
+        <h1
+          style="
+            font-family: 'Caveat', cursive;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bolder;
+            font-size: 30px;
+          "
+        >
+          Blazing Bane
+        </h1>
+      </div>
+      <div class="col-md-8 flex-row flex flex-nowrap justify-evenly">
+        <a href="#intro" title="Introduction">Who</a>
+        <a href="#skills" title="Education">Skills</a>
+        <a href="#connect" title="Socialmedia">Connect</a>
+        <a href="#gaming" title="About my Gaming skills">Gaming</a>
+      </div>
     </div>
-    <div class="col-md-8 flex-row flex flex-nowrap justify-evenly">
-      <a href="#intro" title="Introduction">Who</a>
-      <a href="#skills" title="Education">Skills</a>
-      <a href="#connect" title="Socialmedia">Connect</a>
-      <a href="#gaming" title="About my Gaming skills">Gaming</a>
-    </div>
+
+    <style>
+      @media only screen and (max-width: 768px) {
+        .hideMobile {
+          display: none;
+        }
+      }
+    </style>
   </div>
 </nav>

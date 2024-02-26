@@ -25,26 +25,57 @@ if (contentDiv) {
       [
         "Blogs",
         "https://media.giphy.com/media/prsVOti94aE2k/giphy.gif",
-        [
-          "https://nextdayanimations.com/wp-content/uploads/2022/02/typing.gif",
-          "",
-        ],
-        `This is the Home for my Blogs. I share guides, insights and a few findings of various topics.
+        ["", "/public/lottie/blog.json"],
+        `I believe in sharing knowledge and experiences with other for greater good. I started my known Blogging journey where I share guides, insights and a few findings of various topics.
 I share things which are useful for others in a context of Tech, Health, Documents, Applications etc.`,
         "https://blogs.blazingbane.com",
       ],
       [
         "Rimmind",
         "https://scitechdaily.com/images/Brain-Patterns-Illustration.gif",
-        [
-          "https://nextdayanimations.com/wp-content/uploads/2022/02/typing.gif",
-          "",
-        ],
-        "A fully costume developed application to organize things running in our brain do check this out a cool one",
+        ["", "/public/lottie/brain.json"],
+        `I forget things which I wanted to remember, to solve this I have build my own custom application compatible with Web and Android where 
+        anyone can store their thoughts, assign tags while having it all encrypted for security.`,
         "https://rimmind.blazingbane.com",
       ],
     ],
-    [],
+    [
+      [
+        "Memes",
+        "https://media.tenor.com/cfK6NIxpR4MAAAAM/angry-macha.gif",
+        ["", "/public/lottie/insta.json"],
+        `Its a joy to see people happy and memes give people a moment to laugh about for a while. 
+        I try to get this joy of making peoples a happy momement with a instagram page name @BaleBanjara`,
+        "https://www.instagram.com/_balebanjara_/",
+      ],
+      [
+        "Github",
+        "https://user-images.githubusercontent.com/81328619/213875785-400ae517-156b-4aca-a787-bac75d84c393.gif",
+        [
+          "https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif",
+          "",
+        ],
+        `I have a thing for building useful things with skill set I have in coding projest.
+         visit my repo who knows you might find any thing useful for you`,
+        "https://github.com/KondaShivaradhan",
+      ],
+      [
+        "Guru Shots",
+        "https://66.media.tumblr.com/0f10ea31f3ee636e6d4dce8e2cb396df/tumblr_mkpqnn9rtV1s9j8ldo1_500.gif",
+        ["", "/public/lottie/camera.json"],
+        `I known a Canon M50ii and cherish a passion for photography with that im currently a veteran in <strong> <i>GURU SHORTS</i></strong>😎. 
+        I have some stunning shots that I'm proud of Link below for my profile`,
+        "https://rimmind.blazingbane.com",
+      ],
+      [
+        "Who am I?",
+        "https://media.giphy.com/media/l41YvioBMoiQUwKbu/giphy.gif",
+        ["", "/public/lottie/person.json"],
+        `A fellow human on this planet names as <strong><i>Shivaradhan Konda</i></strong> in my late 20's born in India currently in USA. I feel strange talking about myself for some reason.
+        `,
+        "https://kondashivaradhan.github.io/",
+      ],
+    ],
   ];
   //Heading,Backimg, [IconImg,IconLottie],Text,link
   data.forEach((r) => {
@@ -83,6 +114,7 @@ I share things which are useful for others in a context of Tech, Health, Documen
         <lottie-player
             class="Clogo"
             src="${item[2][1]}"
+            style="transform:scale(1.2)"
             background="transparent"
             speed="1"
             loop
@@ -92,7 +124,9 @@ I share things which are useful for others in a context of Tech, Health, Documen
        }
     <div class="ceck">
     <h2 class="text-center text-2xl ">${item[0]}</h2>
-        <h4 style="width:400px" class="text-center text-base ">${item[3]}</h4>
+        <h4 id="ContentText" style="width:350px" class="text-center text-base ">${
+          item[3]
+        }</h4>
         <br>
          <div>
         <a  target="_blank"
