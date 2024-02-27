@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/Public/image/logo.ico" type="image/x-icon" />
-
+  <link href="main.css" rel="stylesheet" />
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -99,25 +99,23 @@
   </video> -->
   <div id="navi">
     <div id="ncon">
-      <div>
-        <!-- <img src="gamepad.svg" id="svg" alt=""> -->
-        <svg
-          id="svg"
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="gamepad"
-          class="svg-inline--fa fa-gamepad fa-w-20"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 512"
-        >
-          <path
-            fill="currentColor"
-            d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"
-          ></path>
-        </svg>
-      </div>
+      <!-- <img src="gamepad.svg" id="svg" alt=""> -->
+      <svg
+        id="svg"
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="gamepad"
+        class="svg-inline--fa fa-gamepad fa-w-20"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 512"
+      >
+        <path
+          fill="currentColor"
+          d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"
+        ></path>
+      </svg>
       <div class="container" id="ntext">
         <div class="wrap">
           <!-- <i class="fas fa-spinner"></i> -->
@@ -154,9 +152,8 @@
         ></a>
         <button
           onclick="navi()"
-          style="background: transparent; border: white solid 3px; color: white"
+          style="background: transparent; border: white solid 2px; color: white"
           class="btn btn-secondary"
-          title=""
         >
           <i id="rot" class="fas fa-greater-than"></i>
         </button>

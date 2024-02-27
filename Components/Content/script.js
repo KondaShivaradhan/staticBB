@@ -124,7 +124,7 @@ I share things which are useful for others in a context of Tech, Health, Documen
        }
     <div class="ceck">
     <h2 class="text-center text-2xl ">${item[0]}</h2>
-        <h4 id="ContentText" style="width:350px" class="text-center text-base ">${
+        <h4 id="ContentText" style="width:330px" class="text-center text-base ">${
           item[3]
         }</h4>
         <br>
